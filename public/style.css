@@ -1,0 +1,88 @@
+/* Fonte e reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Cabeçalho */
+header {
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Área principal */
+main {
+  flex: 1;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Botões de pictograma */
+.cell {
+  background: white;
+  border: none;
+  border-radius: 16px;
+  padding: 1rem;
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cell:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+}
+
+.cell img {
+  max-height: 64px;
+  margin-bottom: 0.5rem;
+}
+
+.label {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Área da frase */
+#phrase {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  font-size: 1rem;
+  min-height: 40px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Rodapé */
+footer {
+  background: #eee;
+  padding: 0.8rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #555;
+}
